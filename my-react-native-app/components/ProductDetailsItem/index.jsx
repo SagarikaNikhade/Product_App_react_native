@@ -1,14 +1,15 @@
 import {View,Text,StyleSheet} from "react-native";
 
-export default function ProductDetailsItem(detailData){
+export default function ProductDetailsItem({detailData}){
+    //  console.log(detailData,"detailData")
     return (
         <View style={styles.container}>
-            <Text style={styles.textStyle}>{detailData.title}</Text>
-            <Text style={styles.textStyle}>{detailData.description}</Text>
-            <Text style={styles.textStyle}>{detailData.price}</Text>
-            <Text style={styles.textStyle}>{detailData.rating}</Text>
-            <Text style={styles.textStyle}>{detailData.brand}</Text>
-            <Text style={styles.textStyle}>{detailData.category}</Text>
+            <Text style={styles.textStyle}>Title:{detailData.title}</Text>
+            <Text style={styles.textStyle}>Description:{detailData.description}</Text>
+            <Text style={styles.textStyle}>Price:{detailData.price}</Text>
+            <Text style={styles.textStyle}>Rating:{detailData.rating}</Text>
+            <Text style={styles.textStyle}>Brand:{detailData.brand}</Text>
+            <Text style={styles.textStyle}>Category:{detailData.category}</Text>
         </View>
     )
 }

@@ -9,7 +9,7 @@ export default function ProductDetails(){
     // console.log(route.params)
     const {productId} = route.params;
     const [loading, setLoading] = useState(false);
-    const [detailData, setDetailData] = useState([]);
+const [detailData, setDetailData] = useState([]);
 
     useEffect(()=>{
         setLoading(true);
