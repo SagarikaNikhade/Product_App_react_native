@@ -9,6 +9,25 @@ const ProductContext = ({children}) =>{
     // list of products
     const [product,setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
+    // favourite
+    const [favouriteItem,setFavouriteItem] = useState([]);
+
+    const AddToFav = ({productId,reason}) =>{
+       let copyFavItems = [...favouriteItem] 
+       const index = copyFavItems.findIndex(item =>item.id === productId);
+       if(index === -1){
+        const getCurrentProductItem = product.find(
+          (item) => item.id === productId
+        );
+        
+        copyFavItems.push({
+          title: getCurrentProductItem.title,
+          id : productId,
+          reason
+         })
+       }
+       setFavouriteItem(copyFavItems)
+    }
 
     useEffect(()=>{
       setLoading(true);
@@ -27,10 +46,10 @@ const ProductContext = ({children}) =>{
         getData()
     },[])
 
-    console.log(product)
+    // console.log(favouriteItem)
 
     return (
-        <Context.Provider value={{product,loading}}>
+        <Context.Provider value={{product,loading,AddToFav,favouriteItem}}>
             {children}
         </Context.Provider>
     )
