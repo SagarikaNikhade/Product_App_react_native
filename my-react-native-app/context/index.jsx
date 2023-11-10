@@ -46,7 +46,7 @@ const ProductContext = ({children}) =>{
         getData()
     },[])
 
-    // console.log(favouriteItem)
+    //  console.log(favouriteItem)
 
     return (
         <Context.Provider value={{product,loading,AddToFav,favouriteItem}}>

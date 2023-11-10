@@ -1,9 +1,25 @@
-import {View,Text} from "react-native";
+import {View,Text,StyleSheet} from "react-native";
 
-export default function FavouriteItem(){
+export default function FavouriteItem({title,reason}){
     return (
-        <View>
-            <Text>Fav Item</Text>
+        <View style={styles.FavouriteItemContainer}>
+            <Text style={styles.text}>{title}</Text>
+            <Text style={styles.text}>{reason}</Text>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    FavouriteItemContainer:{
+    borderWidth:1,
+    padding:10,
+    backgroundColor:"#0f0782",
+    marginBottom:10,
+    },
+    text:{
+     color:"white",
+     fontSize:20,
+     fontWeight:"bold",
+     paddingBottom:10
+    }
+})
