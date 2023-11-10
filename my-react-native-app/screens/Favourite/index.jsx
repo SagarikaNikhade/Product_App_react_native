@@ -4,7 +4,7 @@ import { Context } from "../../context";
 import FavouriteItem from "../../components/FavouriteItem";
 
 export default function Favourite(){
-    const {favouriteItem} = useContext(Context);
+    const {favouriteItem,handleRemoveFav} = useContext(Context);
     //  console.log(favouriteItem);
     if(!favouriteItem){
        return (
@@ -21,6 +21,8 @@ export default function Favourite(){
             renderItem={(itemdata)=> <FavouriteItem 
             title={itemdata.item.title}
             reason={itemdata.item.reason}
+            handleRemoveFav = {handleRemoveFav}
+            id={itemdata.item.id}
             />}
             keyExtractor={(item)=>item.id}
             />

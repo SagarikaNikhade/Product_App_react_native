@@ -19,14 +19,25 @@ const ProductContext = ({children}) =>{
         const getCurrentProductItem = product.find(
           (item) => item.id === productId
         );
-        
         copyFavItems.push({
           title: getCurrentProductItem.title,
           id : productId,
           reason
          })
+       }else{
+        copyFavItems[index] = {
+          ...copyFavItems[index], reason
+        }
        }
        setFavouriteItem(copyFavItems)
+    }
+
+    // Remove Fav
+    const handleRemoveFav = (currID) =>{
+     let copyFavItems = [...favouriteItem]
+
+     copyFavItems = copyFavItems.filter(item => item.id !== currID)
+     setFavouriteItem(copyFavItems)
     }
 
     useEffect(()=>{
@@ -49,7 +60,7 @@ const ProductContext = ({children}) =>{
     //  console.log(favouriteItem)
 
     return (
-        <Context.Provider value={{product,loading,AddToFav,favouriteItem}}>
+        <Context.Provider value={{product,loading,AddToFav,favouriteItem,handleRemoveFav}}>
             {children}
         </Context.Provider>
     )
