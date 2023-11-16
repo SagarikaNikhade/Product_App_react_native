@@ -23,3 +23,14 @@ This React Native project delivers a meticulously crafted and scalable product p
 - React-Native
 - StyleSheet
 - React Navigation
+
+
+## Features
+
+- **Intuitive Navigation:** Effortlessly explore the app with a smooth and user-friendly navigation experience.
+- **Home Page:** Discover a well-organized home page showcasing a variety of products.
+- **Product Details:** Dive into detailed views of each product, including images and key information.
+- **Favorites:** Create a personalized favorites list for quick access to preferred products.
+- **Responsive Styling:** Enjoy a visually appealing layout with responsive styling using React Native's StyleSheet.
+
+Explore a seamless and visually appealing mobile experience with our React Native Product App.
