@@ -1,6 +1,6 @@
 # Product_App_react_native
 
-This React Native project is designed to create an organized and scalable product page application.
+This React Native project delivers a meticulously crafted and scalable product page application. Seamlessly navigate through a user-friendly interface, featuring an organized home page, detailed single product views, and a dedicated favorites page.
 
 ## Screenshots
 
