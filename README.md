@@ -1,6 +1,6 @@
 # Product_App_react_native
 
-This project's primary objective is the creation of a sophisticated homepage for ntwist.com and github.com. Through meticulous design and development, we aspire to elevate their digital presence, providing a seamless and engaging user experience tailored to each website's distinct character and purpose.
+This React Native project is designed to create an organized and scalable product page application.
 
 ## Screenshots
 
