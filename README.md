@@ -2,6 +2,10 @@
 
 This React Native project delivers a meticulously crafted and scalable product page application. Seamlessly navigate through a user-friendly interface, featuring an organized home page, detailed single product views, and a dedicated favorites page.
 
+
+## Expo Demo
+  ![Screenshot (15)-1](https://github.com/wave2211/Product_App_react_native/assets/112957348/9e3227db-bb82-4c31-99d2-b42f8c1418bb)
+
 ## Screenshots
 
 ### Home Page
